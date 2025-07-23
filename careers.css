@@ -1,0 +1,83 @@
+/* Careers Section */
+.careers-hero {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background-color: #fdf9f6;
+}
+
+.careers-hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.careers-hero p {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.why-work {
+  background-color: #fcf6f1;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.why-work h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.benefit {
+  width: 250px;
+  text-align: center;
+}
+
+.benefit span {
+  font-size: 36px;
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #44c4a1; /* Teal accent */
+}
+
+.benefit h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.benefit p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Openings Section */
+.openings {
+  background-color: #fdf9f6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.openings h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.no-openings {
+  font-size: 16px;
+  color: #888;
+  max-width: 600px;
+  margin: 0 auto;
+}

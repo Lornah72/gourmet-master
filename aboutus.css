@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #4B2E2B;
+}
+
+.about-us {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-us h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.story-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.story-section .text {
+  flex: 1 1 35%;
+}
+
+.story-section .text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.story-section .text p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.story-section .image {
+  flex: 1 1 55%;
+  text-align: center;
+}
+
+.story-section .image img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.company-image {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.company-image img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.team-section p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-member {
+  text-align: center;
+  width: 160px;
+}
+
+.team-member img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .story-section {
+    flex-direction: column;
+  }
+
+  .team-member {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-member {
+    width: 100%;
+  }
+}

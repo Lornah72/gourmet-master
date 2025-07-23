@@ -1,0 +1,75 @@
+.catalogue-section {
+  padding: 60px 20px;
+  background-color: #fdf9f6;
+  font-family: 'Inter', sans-serif;
+  color: #3a2d2d;
+}
+
+.price-validity {
+  color: #a76f3d;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #2b2b2b;
+}
+
+.catalogue-card {
+  background-color: #f9f6f2;
+  border-left: 6px solid #a76f3d;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.catalogue-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.catalogue-card p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.catalogue-download {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.download-btn {
+  background-color: #a76f3d;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #8c5932;
+}
+.download-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #a76f3d;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.download-link:hover {
+  background-color: #8c5932;
+}
