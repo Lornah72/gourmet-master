@@ -18,12 +18,14 @@
 }
 
 /* Navbar */
+/* === Navbar === */
 .navbar {
   width: 100%;
   background-color: #fff;
   padding: 15px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  
+  position: relative;
+  z-index: 999;
 }
 
 .container {
@@ -33,69 +35,78 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 25px;
+  position: relative;
 }
 
+/* Logo */
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 .logo img {
   width: 60px;
   height: 60px;
 }
-
 .logo span {
   font-weight: 600;
   font-size: 1.2rem;
-  color: #f57c00; /* orange-gold accent */
+  color: #f57c00;
 }
 
+/* Center nav links */
 .nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: 25px;
 }
-
 .nav-links a {
   text-decoration: none;
   color: #5a3e2b;
   font-weight: 500;
   transition: color 0.3s;
 }
-
 .nav-links a:hover,
 .nav-links a.active {
   color: #b48256;
 }
 
-.nav-btn button {
-  background-color: #fff;
-  color: white;
-  padding: 8px 20px;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
+/* Hamburger Button */
+.nav-btn {
+  display: none;
+}
+.hamburger {
+  width: 25px;
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
   cursor: pointer;
-  transition: background 0.3s;
+}
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: #5a3e2b;
+  border-radius: 3px;
 }
 
-.nav-btn button:hover {
-  background-color: #e66900;
-}
+/* === Responsive Styles === */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: white;
-    flex-direction: column;
+    top: 70px;
+    left: 0;
     width: 100%;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: none;
+    align-items: flex-start;
   }
-
   .nav-links.active {
     display: flex;
   }
@@ -103,7 +114,16 @@
   .hamburger {
     display: flex;
   }
+
+  .nav-btn {
+    display: block;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+  }
 }
+
 .site-footer {
   background-color: #fcf6f1;
   border-top: 1px solid #ddd;

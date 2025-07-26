@@ -8,7 +8,6 @@
   <link rel="icon" type="image/png" href="assets/logo.png">
 
     <link rel="stylesheet" href="shared.css">
-    <script src="shared.js"></script>
     <link rel="stylesheet" href="contact.css">
 
     <!-- Tailwind CSS CDN -->
@@ -24,23 +23,47 @@
   <div class="red"></div>
 </div>
 <header class="navbar">
-  <div class="container">
-    <div class="logo">
-      <img src="assets/logo.png" alt="Gourmet Master Logo">
-      
+    <div class="container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Gourmet Master Logo">
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="careers.html">Careers</a>
+      </nav>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="aboutus.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="careers.html">Careers</a>
-    </nav>
-    <div class="nav-btn">
-      <button></button>
-    </div>
-  </div>
-</header>
+  </header>
+
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  // Toggle nav menu
+  hamburger.addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent immediate close from outside click
+    navLinks.classList.toggle('active');
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    const isClickInsideNav = navLinks.contains(e.target);
+    const isClickHamburger = hamburger.contains(e.target);
+
+    if (!isClickInsideNav && !isClickHamburger) {
+      navLinks.classList.remove('active');
+    }
+  });
+</script>
 
 </div>
 <section class="careers-hero">

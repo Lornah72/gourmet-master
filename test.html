@@ -1,244 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="test.css">
-  <link rel="stylesheet" href="shared.css">
-  <script src="shared.js"></script>
-  
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gourmet Master</title>
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* NAVBAR BASE */
+    .navbar {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      position: relative;
+      z-index: 1000;
+    }
+
+    .navbar .container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      display: block;
+      border-radius: 2px;
+    }
+
+    /* MOBILE STYLES */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 1rem 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="head-er">
-  <div class="flag-bar">
-  <div class="green"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-</div>
-<header class="navbar">
-  <div class="container">
-    <div class="logo">
-      <img src="assets/logo.png" alt="Gourmet Master Logo" />
-    </div>
 
-    <nav class="nav-links" id="navLinks">
-      <a href="#">Home</a>
-      <a href="#">Services</a>
-      <a href="aboutus.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="careers.html">Careers</a>
-    </nav>
-
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-</header>
-
-</div>
-
-<section class="hero">
-    <div class="hero-text">
-      <h1><span>Premium</span> Italian <br /> Products & Expertise</h1>
-      <p>Gourmet Master is your B2B partner for authentic Italian ingredients and consultation, tailored for restaurants, hotels & retailers in Kenya.</p>
-      <div class="hero-buttons">
-        <button class="btn-primary" >Explore Services</button>
-        <button class="btn-secondary" onclick="location.href='services.html'">
-          <span>▶</span>
-          How to Partner
-        </button>
-      </div>
-      <div class="metrics">
-        <div class="metric">
-          <strong>4000+</strong>
-          <p>Products</p>
-        </div>
-        <div class="metric">
-          <strong>150+</strong>
-          <p>B2B Clients</p>
-        </div>
-        <div class="metric">
-          <strong>15+</strong>
-          <p>Years Experience</p>
-        </div>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="assets/hero1.png" alt="Italian Dish" />
-    </div>
-  </section>
-
-<!-- <section class="hero">
-  <div class="hero-content">
-    <p class="subtitle">ITALIAN RESTAURANT</p>
-    
-    <img src="assets/logo.png" alt="Gourmet Master Logo" class="brand-logo">
-    <nav class="nav-menu">
-      <a href="#">HOME</a>
-      <a href="#">ABOUT US</a>
-      <a href="#">SERVICES</a>
-      <a href="contact.html">CONTACTS</a>
-      <a href="careers.html">CARRERS</a>
-    </nav>
-  </div>
-</section>-->
-<section class="product-section">
-  <div class="product-grid">
-
-    <!-- Row 1 -->
-    <div class="product-card image-card">
-      <img src="assets/pasta.jpeg" alt="Salad">
-    </div>
-    <div class="product-card text-card">
-      <h4>Consultation on Italian Cuisine &<br>Concepts</h4>
-      <p class="desc">Starting an Italian restaurant, deli, café, or wine bar? We provide expert consultation on product sourcing, menu development, staff training, and setup, tailored for Kenyan entrepreneurs and businesses.</p>
-      <button>Book Consultation</button>
-    </div>
-    <div class="product-card image-card">
-      <img src="assets/display2.jpeg" alt="Spaghetti">
-    </div>
-
-    <!-- Row 2 -->
-    <div class="product-card text-card">
-      <h4>Get Italian Products for<br> Your Business</h4>
-      <p class="desc">Looking to stock premium Italian cheeses, pastas, sauces, wines, or meats? We supply restaurants, hotels, delis, supermarkets, and liquor stores with high-quality, imported Italian products curated for Kenyan B2B clients.</p>
-      <button>Contact Sales</button>
-    </div>
-    <div class="product-card image-card">
-      <img src="assets/hero2.png" alt="Rigatoni">
-    </div>
-    <div class="product-card text-card">
-      <h4>Tailored Solutions for<br>B2B Clients</h4>
-      <p class="desc">Whether you need monthly restocking, curated product sets, or bulk discounts, our B2B support team is ready to assist with personalized solutions that match your business needs.</p>
-      <button>Contact Sales</button>
-    </div>
-
-  </div>
-</section>
-<!-- HTML -->
-<section class="about-us">
-  <div class="about-container">
-    <div class="about-left">
-      <h2>About Gourmet Master</h2>
-      <p>
-        At Gourmet Master, we specialize in curating and delivering authentic Italian food experiences to Kenyan businesses. From imported cheeses and pastas to consultation services for restaurants, hotels, and retailers, we make Italian excellence accessible and profitable.
-      </p>
-      <p>
-        With branches in Nairobi and Mombasa, we work hand-in-hand with our clients to source the finest products, train kitchen staff, and even help you launch your own Italian-themed business.
-      </p>
-    </div>
-
-    <div class="about-right">
-      <div class="media-grid">
-        <img src="assets/aboutus1.png" alt="Roberto - Founder">
-        <img src="assets/van.jpeg" alt="Renata - Co-founder">
-        <video controls poster="assets/hero4.jpeg">
-          <source src="assets/coldroom.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <img src="assets/godown1.jpeg" alt="Gourmet Master Store">
-        
-      </div>
-    </div>
-  </div>
-</section>
-<section class="contact-section">
-  <div class="contact-container">
-    <!-- LEFT SIDE -->
-    
-    <!-- RIGHT SIDE MAP CARDS -->
-    <div class="map-section">
-      <div class="map-card">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d127644.2159949697!2d36.79402132585758!3d-1.2414802164753642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x182f15279027b129%3A0xdd1bb36ca8e8b487!2sAllied%20Compound%2C%20Baba%20Dogo%20Rd%2C%20Nairobi!3m2!1d-1.2414815!2d36.8764233!5e0!3m2!1sen!2ske!4v1753344162666!5m2!1sen!2ske"></iframe>
-        <div class="map-details">
-          <h4>Gourmet Master, Nairobi</h4>
-          <p>Allied Compound, Baba Dogo Rd, Nairobi</p>
-          <p>Nairobi, Kenya</p>
-          <p>Tel: +254 723 543 651</p>
-        </div>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Gourmet Master Logo">
       </div>
 
-      <div class="map-card">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63677.45246414639!2d39.63175077615008!3d-4.052876636504702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1840131773f12245%3A0x948a89d4bd1e40cd!2sTropic%20trade%20market%20ltd%2C%20Mombasa!3m2!1d-4.0529614!2d39.6729783!5e0!3m2!1sen!2ske!4v1753344263554!5m2!1sen!2ske" allowfullscreen="" loading="lazy"></iframe>
-        <div class="map-details">
-          <h4>Gourmet Master, Mombasa</h4>
-          <p>Nyoka Rd,Mkomani</p>
-          <p>Nyali, Mombasa, Kenya</p>
-          <p>Tel: +254 705 221 249</p>
-        </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="careers.html">Careers</a>
+      </nav>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-    <div class="contact-info">
-      <p class="section-intro">HOW IT WORKS</p>
-      <h2 class="section-title">We’d Love to Hear From You</h2>
-      <p class="section-description">
-        Reach out to us for inquiries, orders, or assistance. Our team is ready to support you from both Nairobi and Mombasa branches.
-      </p>
+  </header>
 
-      <div class="info-block">
-        <h3>Phone Number</h3>
-        <p>+254 700 907 460</p>
-      </div>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
 
-      <div class="info-block">
-        <h3>Business Hours</h3>
-        <p>Monday – Friday, 08:00am – 06:00pm</p>
-        <p>Saturday, 08:00am – 2:00pm</p>
-      </div>
-
-      <div class="info-block">
-        <h3>Nairobi Address</h3>
-        <p>Allied Compound, Baba Dogo Rd, Nairobi</p>
-      </div>
-
-      <div class="info-block">
-        <h3>Mombasa Address</h3>
-        <p>Nyoka Rd,Mkomani</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-<footer class="site-footer">
-  <div class="footer-container">
-    <!-- LEFT: Logo and copyright -->
-    <div class="footer-brand">
-      <img src="assets/logo.png" alt="Roberto's Logo" class="footer-logo" />
-      <p class="footer-copy">© 2025 Roberto’s Market. All rights reserved</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-    </div>
-
-    <!-- CENTER: About -->
-    <div class="footer-links">
-      <h4>About</h4>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Careers</a></li>
-      </ul>
-    </div>
-
-    <!-- RIGHT: Resources -->
-    <div class="footer-links">
-      <h4>Resources</h4>
-      <ul>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Privacy</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
-
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>
