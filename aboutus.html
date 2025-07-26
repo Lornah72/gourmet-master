@@ -9,133 +9,114 @@
   <script src="shared.js"></script>
 </head>
 <body>
-    <div class="hero-wrapper">
-<header class="poseidon-header">
-  <div class="header-top">
-    <div class="social-links">
-      <a href="#" title="Instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="#4B2E2B" viewBox="0 0 24 24">
-          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm5.25-.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"/>
-        </svg>
-      </a>
-      <a href="#" title="TikTok">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="#4B2E2B" viewBox="0 0 24 24">
-          <path d="M9.636 3.214v12.508a2.857 2.857 0 1 1-2.857-2.857h.143v-2.59a5.45 5.45 0 0 0-.143-.003A5.934 5.934 0 1 0 14.714 16.2v-6.935a6.536 6.536 0 0 0 3.429 1.003v-2.92a3.621 3.621 0 0 1-3.429-3.59V3.214H9.636Z"/>
-        </svg>
-      </a>
-      <a href="#" title="Facebook">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="#4B2E2B" viewBox="0 0 24 24">
-          <path d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 4.88 3.65 8.93 8.44 9.85v-6.97H8.1v-2.88h2.34V9.41c0-2.3 1.37-3.57 3.47-3.57.69 0 1.42.12 1.42.12v1.56h-1c-.99 0-1.3.62-1.3 1.26v1.51h2.22l-.35 2.88h-1.87v6.97C18.35 21 22 16.95 22 12.07z"/>
-        </svg>
-      </a>
-      <a href="#" title="X">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="#4B2E2B" viewBox="0 0 24 24">
-          <path d="M13.468 10.982 20.441 3h-1.717l-6.08 7.065L8.03 3H3.25l7.27 10.654L3.25 21h1.717l6.417-7.451L15.97 21h4.78l-7.282-10.018ZM5.29 4.267h2.112l11.31 15.47h-2.11L5.29 4.266Z"/>
-        </svg>
-      </a>
+   <div class="head-er">
+  <div class="flag-bar">
+  <div class="green"></div>
+  <div class="white"></div>
+  <div class="red"></div>
+</div>
+<header class="navbar">
+  <div class="container">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Gourmet Master Logo" />
     </div>
 
-    <div class="brand">
-      <img src="assets/logo.png" alt="Gourmet Master Logo">
-    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="careers.html">Careers</a>
+    </nav>
 
-    <div class="search-bar">
-      <input type="text" placeholder="I'm searching for...">
-      <button title="Search">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" fill="#4B2E2B" viewBox="0 0 24 24">
-          <path d="M10 2a8 8 0 015.292 13.708l5 5a1 1 0 01-1.414 1.414l-5-5A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"/>
-        </svg>
-      </button>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-
-    <button id="hamburger" class="hamburger">☰</button>
   </div>
-
-  <nav class="main-nav" id="dropdownPanel">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="catalogue.html">Catalogue</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="careers.html">Careers</a></li>
-    </ul>
-    <div class="mobile-socials">
-    <a href="#" title="Instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="#4B2E2B" viewBox="0 0 24 24">
-          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm5.25-.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"/>
-        </svg>
-      </a>
-      <a href="#" title="TikTok">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="#4B2E2B" viewBox="0 0 24 24">
-          <path d="M9.636 3.214v12.508a2.857 2.857 0 1 1-2.857-2.857h.143v-2.59a5.45 5.45 0 0 0-.143-.003A5.934 5.934 0 1 0 14.714 16.2v-6.935a6.536 6.536 0 0 0 3.429 1.003v-2.92a3.621 3.621 0 0 1-3.429-3.59V3.214H9.636Z"/>
-        </svg>
-      </a>
-      <a href="#" title="Facebook">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="#4B2E2B" viewBox="0 0 24 24">
-          <path d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 4.88 3.65 8.93 8.44 9.85v-6.97H8.1v-2.88h2.34V9.41c0-2.3 1.37-3.57 3.47-3.57.69 0 1.42.12 1.42.12v1.56h-1c-.99 0-1.3.62-1.3 1.26v1.51h2.22l-.35 2.88h-1.87v6.97C18.35 21 22 16.95 22 12.07z"/>
-        </svg>
-      </a>
-      <a href="#" title="X">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="#4B2E2B" viewBox="0 0 24 24">
-          <path d="M13.468 10.982 20.441 3h-1.717l-6.08 7.065L8.03 3H3.25l7.27 10.654L3.25 21h1.717l6.417-7.451L15.97 21h4.78l-7.282-10.018ZM5.29 4.267h2.112l11.31 15.47h-2.11L5.29 4.266Z"/>
-        </svg>
-      </a>
-    
-  </div>
-  </nav>
 </header>
 
-<section class="about-us">
-  <div class="container">
-    <h1>About Gourmet Master</h1>
-    <p class="intro">
-      Gourmet Master Ltd is a premium distributor of fine food and beverages in Kenya. With roots tracing back to Italian heritage and a passion for culinary excellence, we proudly serve homes, restaurants, and hospitality providers across the country.
-    </p>
+</div>
 
-    <div class="story-section">
-      <div class="text">
-        <h2>Our Story</h2>
-        <p>
-          Founded by Roberto and Renata, Gourmet Master was born out of a desire to bring authentic gourmet products to Kenyan households and the hospitality industry. From humble beginnings in Mombasa, we've grown to become a trusted name, known for quality, trust, and dedication.
-        </p>
-        <p>
-          Our commitment to excellence and deep relationships with suppliers have enabled us to source and deliver premium goods with consistency and care. Whether it's cheese, wine, pasta, or cold cuts – we bring the taste of tradition and innovation to your table.
-        </p>
-      </div>
-      <div class="image">
-        <img src="assets/aboutus1.png" alt="Founders Roberto and Renata">
-      </div>
+<section class="about-section">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>Our Story</h2>
+      <p>
+        Over 30 years ago, Roberto Miano arrived in Kenya and fell in love with its vibrant culture and people.
+        Inspired by his passion for authentic Italian cuisine, he brought the essence of Italy to Kenya, from
+        fine cheeses and wines to truffles and espresso. Together with Renata, their shared vision led to the birth
+        of <strong>Gourmet Master Ltd</strong>, now a leading name in Kenya for premium Italian products and B2B consultation.
+      </p>
+      <p>
+        Today, Gourmet Master is more than a distributor, we are culinary partners to hotels, restaurants, and retail
+        shops across Kenya. Whether you're starting an Italian restaurant or sourcing hard-to-find delicacies,
+        we offer tailored support, product expertise, and a taste of Italy, right here in Kenya.
+      </p>
+      <p><em>We don’t just supply , we guide, train, and inspire.</em></p>
     </div>
 
-    <div class="company-image">
-      <img src="assets/hero2.png" alt="Gourmet Master Office or Warehouse">
-    </div>
-
-    <div class="team-section">
-      <h2>Meet Our Team</h2>
-      <p>Behind every delivery, every carefully selected product, and every satisfied customer is a team of passionate professionals who live and breathe food excellence.</p>
-
-      <div class="team-grid">
-        <div class="team-member">
-          <img src="assets/team1.jpg" alt="Team Member 1">
-          <p>Logistics Manager</p>
-        </div>
-        <div class="team-member">
-          <img src="assets/team2.jpg" alt="Team Member 2">
-          <p>Product Specialist</p>
-        </div>
-        <div class="team-member">
-          <img src="assets/team3.jpg" alt="Team Member 3">
-          <p>Customer Relations</p>
-        </div>
-        <div class="team-member">
-          <img src="assets/team4.jpg" alt="Team Member 4">
-          <p>Warehouse Supervisor</p>
-        </div>
-      </div>
+    <div class="about-image">
+      <img src="assets/aboutus1.png" alt="Roberto and Renata - Founders of Gourmet Master">
     </div>
   </div>
 </section>
+<section class="about-hero">
+  <div class="about-header">
+    <h2>About Gourmet Master Kenya</h2>
+    <p>We pride ourselves on delivering authentic Italian products and expert consultation to empower hospitality and retail businesses across Kenya.</p>
+    <div class="about-buttons">
+      <a href="contact.html" class="btn-primary">Get in Touch</a>
+      <a href="services.html" class="btn-outline">Explore Services</a>
+    </div>
+    <div class="stats">
+      <div><h3>500+</h3><p>Products Supplied</p></div>
+      <div><h3>15+</h3><p>Years Experience</p></div>
+      <div><h3>150+</h3><p>B2B Clients</p></div>
+    </div>
+  </div>
+  <div class="about-image">
+    <img src="assets/hero1.png" alt="Chef at work">
+  </div>
+</section>
+
+<section class="about-features">
+  <div class="feature-image">
+    <img src="assets/hero4.jpeg" alt="Founder">
+  </div>
+  <div class="feature-text">
+    <h3>Our Mission</h3>
+    <p>We aim to be the most reliable B2B partner for sourcing and consulting on authentic Italian food, wine, and culinary equipment across East Africa.</p>
+    <ul class="feature-list">
+      <li>Authentic imported products</li>
+      <li>Tailored B2B consultations</li>
+      <li>End-to-end supply chain support</li>
+      <li>Localized solutions for Kenyan market</li>
+    </ul>
+  </div>
+</section>
+
+<section class="about-timeline">
+  <h3>Milestones & Growth</h3>
+  <div class="milestones">
+    <div class="milestone-card">
+      <h4>Founded (2010)</h4>
+      <p>Gourmet Master was established with a mission to supply top-tier Italian products to Kenyan restaurants.</p>
+    </div>
+    <div class="milestone-card">
+      <h4>Consultation Launched (2015)</h4>
+      <p>We began offering Italian cuisine consulting services for hotels and delis.</p>
+    </div>
+    <div class="milestone-card">
+      <h4>Expanded to Mombasa (2020)</h4>
+      <p>Opened our second outlet in Mombasa to serve the coastal region.</p>
+    </div>
+  </div>
+</section>
+
+
+
 <footer class="site-footer">
   <div class="footer-container">
     <!-- LEFT: Logo and copyright -->
