@@ -1,8 +1,27 @@
+.careers-hero {
+  text-align: center;
+  padding: 120px 20px 30px;
+  background-color: #fdf9f6;
+}
+
+.careers-hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #5a3e2b;
+}
+
+.careers-hero p {
+  font-size: 16px;
+  color: #5a3e2b;
+  max-width: 600px;
+  margin: 0 auto;
+}
 .contact-section {
   background-color: #fdf9f6; /* beige tone from your screenshot */
   padding: 60px 80px;
   font-family: 'Segoe UI', sans-serif;
-  color: #3e2f26;
+  color: #5a3e2b;
 }
 
 .contact-title {
@@ -10,7 +29,7 @@
   font-weight: bold;
   margin-bottom: 40px;
   text-align: center;
-  color: #3e2f26;
+  color: #5a3e2b;
 }
 
 .contact-grid {
@@ -28,17 +47,17 @@
 .contact-box h3 {
   font-size: 22px;
   margin-bottom: 10px;
-  color: #3e2f26;
+  color: #5a3e2b;
 }
 
 .contact-box p {
   font-size: 16px;
   margin: 6px 0;
-  color: #3e2f26;
+  color: #5a3e2b;
 }
 
 .contact-box a {
-  color: #3e2f26;
+  color: #5a3e2b;
   text-decoration: underline;
 }
 
@@ -53,8 +72,9 @@
 .contact-methods {
   background-color: #fcf6f1;
   padding: 50px 30px;
+  font-weight: 500;
   text-align: center;
-  color: #333;
+  color: #5a3e2b;
 }
 
 .methods-title {

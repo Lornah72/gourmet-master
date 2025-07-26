@@ -1,17 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.getElementById('hamburger');
-  const dropdownPanel = document.getElementById('dropdownPanel');
+const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
 
-  // Toggle dropdown
-  hamburger.addEventListener('click', (e) => {
-    e.stopPropagation();
-    dropdownPanel.classList.toggle('show');
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
   });
-
-  // Close when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!dropdownPanel.contains(e.target) && !hamburger.contains(e.target)) {
-      dropdownPanel.classList.remove('show');
-    }
-  });
-});

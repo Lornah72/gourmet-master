@@ -1,173 +1,107 @@
 /* ===== BASE STYLES ===== */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f3e3cf;
-  color: #4B2E2B;
-}
-
-.poseidon-header {
+.head-er{
+  position: fixed;
   width: 100%;
-  background-color: #fcf6f1;
-  border-bottom: 1px solid #eaeaea;
+}
+/* Flag bar */
+.flag-bar {
+  display: flex;
+  height: 10px;
+}
+.flag-bar .green { flex: 1; background: #008C45; }
+.flag-bar .white { flex: 1; background: #ffffff; }
+.flag-bar .red   { flex: 1; background: #CD212A; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* === TOP HEADER === */
-.header-top {
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3%;
-  flex-wrap: wrap;
+  padding: 0 25px;
 }
 
-/* SOCIAL ICONS (DESKTOP TOP) */
-.social-links {
+.logo {
   display: flex;
-  gap: 20px;
   align-items: center;
-}
-.social-links svg {
-  width: 18px;
-  height: 18px;
-  fill: #4B2E2B;
-  transition: fill 0.3s ease;
-}
-.social-links svg:hover {
-  fill: #C89F7B;
+  gap: 10px;
 }
 
-/* BRAND LOGO */
-.brand {
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.logo span {
   font-weight: 600;
-  color: #4B2E2B;
-}
-.brand img {
-  height: 50px;
-  margin-right: 10px;
-}
-.brand span {
-  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  color: #f57c00; /* orange-gold accent */
 }
 
-/* SEARCH BAR */
-.search-bar {
+.nav-links {
   display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  overflow: hidden;
-  padding-left: 10px;
-}
-.search-bar input {
-  border: none;
-  padding: 0.4rem 0.8rem;
-  outline: none;
-}
-.search-bar button {
-  background: none;
-  border: none;
-  padding: 0.4rem 0.6rem;
-  cursor: pointer;
-}
-.search-bar button svg {
-  width: 16px;
+  gap: 25px;
 }
 
-/* HAMBURGER */
-.hamburger {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: #4B2E2B;
-}
-
-/* === NAVIGATION BAR === */
-.main-nav {
-  border-top: 1px solid #f3f3f3;
-  text-align: center;
-}
-.main-nav ul {
-  list-style: none;
-  padding: 0.8rem 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-.main-nav ul li a {
+.nav-links a {
   text-decoration: none;
-  color: #4B2E2B;
+  color: #5a3e2b;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #b48256;
+}
+
+.nav-btn button {
+  background-color: #fff;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
   font-weight: 600;
-  font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
-}
-.main-nav ul li a:hover {
-  color: #C89F7B;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-/* === MOBILE SOCIAL ICONS === */
-.mobile-socials {
-  display: none; /* Hidden by default */
+.nav-btn button:hover {
+  background-color: #e66900;
 }
-
-/* ===== RESPONSIVE STYLES ===== */
 @media (max-width: 768px) {
-  .header-top {
-    gap: 1rem;
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
 
-  .search-bar,
-  .social-links {
-    display: none; /* Hide top bar socials & search */
+  .nav-links.active {
+    display: flex;
   }
 
   .hamburger {
-    display: block;
-  }
-
-  .main-nav {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 1.5rem;
-  }
-
-  .main-nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 0;
-    gap: 0.5rem;
-  }
-
-  .main-nav.show {
     display: flex;
-  }
-
-  .mobile-socials {
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem;
-    margin-top: 1rem;
-    border-top: 1px solid #eee;
-    padding-top: 1rem;
-  }
-
-  .mobile-socials svg {
-    width: 20px;
-    height: 20px;
-    fill: #4B2E2B;
-    transition: fill 0.3s ease;
-  }
-
-  .mobile-socials svg:hover {
-    fill: #C89F7B;
   }
 }
 .site-footer {
@@ -224,7 +158,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 12px;
-  color: #222;
+  color: #5a3e2b;
 }
 
 .footer-links ul {
@@ -239,7 +173,7 @@ body {
 
 .footer-links ul li a {
   text-decoration: none;
-  color: #555;
+  color: #5a3e2b;
   font-size: 14px;
   transition: color 0.3s ease;
 }
