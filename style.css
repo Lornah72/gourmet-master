@@ -67,7 +67,10 @@ body{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 8rem 6%;
+      padding-left: 6%;
+      padding-right: 6%;
+      padding-top: 130px;
+      padding-bottom: 20px;
       flex-wrap: wrap;
 
     }
