@@ -217,7 +217,7 @@ body{
   
 }
 
-.text-card button {
+.text-card a{
   background-color: transparent;
   border: 1px solid #b47b48;
   color: #3c2f27;
@@ -230,7 +230,7 @@ body{
   .product-grid {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.1rem;
   }
 
   .product-card.text-card,
